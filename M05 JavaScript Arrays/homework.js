@@ -143,13 +143,26 @@ function empiezaConNueve(num) {
    num = num.toString().split('').map(Number);
    if(num[0] === 9) {return true }
    else { return false }
-
 }
 
 function todosIguales(array) {
    // Si todos los elementos del arreglo son iguales, retornar true.
    // Caso contrario retornar false.
-   // Tu código:
+   // Tu código:M5m
+   let sonIguales = true;
+   for (let i = 0; i < array.length; i++) {
+      if(array[i] !== array[i+1] &&  i < array.length - 1){ 
+         return sonIguales = false
+      }
+   }
+   // iguales = array.forEach((el, i, array) => {
+   //    console.log(array, el, i, array[i-1], el !== array[i-1],i > 1 );
+   //    if (el !== array[i+1]) {
+   //       console.log('entre');
+   //       return false
+   //    }
+   // });
+   return sonIguales
 }
 
 function mesesDelAño(array) {
