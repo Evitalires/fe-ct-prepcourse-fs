@@ -155,13 +155,6 @@ function todosIguales(array) {
          return sonIguales = false
       }
    }
-   // iguales = array.forEach((el, i, array) => {
-   //    console.log(array, el, i, array[i-1], el !== array[i-1],i > 1 );
-   //    if (el !== array[i+1]) {
-   //       console.log('entre');
-   //       return false
-   //    }
-   // });
    return sonIguales
 }
 
@@ -170,18 +163,49 @@ function mesesDelAño(array) {
    // "Marzo" y "Noviembre", guardarlos en un nuevo arreglo y retornarlo.
    // Si alguno de los meses no está, retornar el string: "No se encontraron los meses pedidos".
    // Tu código:
+   let mesesNecesarios = ['Marzo', 'Noviembre', 'Enero'];
+   let mesesEncontrados= [];
+   
+   
+   for (const mes of array) {
+      if (mesesNecesarios.includes(mes)){
+         mesesEncontrados.push(mes.toString());
+      }
+   }
+   console.log(mesesNecesarios);
+   if (mesesEncontrados.length === mesesNecesarios.length) { return mesesNecesarios}
+   else { return "No se encontraron los meses pedidos" }
 }
 
 function tablaDelSeis() {
    // Escribe una función que muestre la tabla de multiplicar del 6 (del 0 al 60).
    // La función devuelve un arreglo con los resultados de la tabla de multiplicar del 6 en orden creciente.
    // Tu código:
+   const tabla = [];
+
+  for (let i = 0; i <= 10; i++) {
+    const resultado = 6 * i;
+    tabla.push(resultado);
+  }
+
+  return tabla;
+
 }
+tablaDelSeis(6)
 
 function mayorACien(array) {
    // La función recibe un arreglo con enteros entre 0 y 200.
    // Recorrerlo y retornar un arreglo con todos los valores mayores a 100 (no incluye el 100).
    // Tu código:
+   let mayor100 = []
+
+   for (const numero of array) {
+      if (numero > 100){
+         mayor100.push(numero);
+      }
+   }
+
+   return mayor100;
 }
 
 /* ----------------------------------------------------------------------------------
@@ -195,6 +219,16 @@ function breakStatement(num) {
    // la ejecución y retornar el string: "Se interrumpió la ejecución".
    // [PISTA]: utiliza el statement 'break'.
    // Tu código:
+   let arreglo = []
+   for (let i = 0; i < 10; i++) {
+      num += 2;
+      arreglo.push(num);
+      if(num == 10) {
+         return "Se interrumpió la ejecución";
+         break
+      };      
+   }
+   return arreglo;
 }
 
 function continueStatement(num) {
@@ -204,6 +238,13 @@ function continueStatement(num) {
    // se continua con la siguiente iteración.
    // [PISTA]: utiliza el statement 'continue'.
    // Tu código:
+   let arreglo = []
+   for (let i = 0; i < 10; i++) {
+      if(i == 6) { continue };      
+      num += 2;
+      arreglo.push(num);
+   }
+   return arreglo
 }
 
 /*⚠️ NO MODIFIQUES NADA DEBAJO DE ESTO ⚠️*/
