@@ -1,0 +1,138 @@
+body {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-seri;
+  font-size: 18px;
+  padding: 0;
+  margin: 0;
+  background-color: whitesmoke;
+}
+header {
+  height: 60px;
+  width: 100%;
+  margin: 0;
+  padding: 1em;
+  background-color: rgb(32, 32, 108); /* Reemplaza con el color que desees */
+  text-align: center;
+  color: #333;
+}
+main {
+    margin: 2em;
+    padding: 2em;
+    background-color: white; 
+    width: fit-content;
+}
+main h1 {
+    display: flex;
+    justify-content: center;
+}
+main a {
+    display: block;
+    margin: 0 auto;
+    width: fit-content;
+}
+
+
+table {
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #f2f2f2; /* Reemplaza con el color que desees */
+}
+nav {
+  height: 40px;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #f2f2f2; /* Reemplaza con el color de fondo deseado */
+  text-align: center;
+  border: 1px solid #ccc; /* Estilo de borde, ajusta según tus preferencias */
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: CENTER;
+}
+li {
+  display: flex;
+  height: auto;
+  margin: 0;
+  padding: 0;
+}
+a {
+  color: darkblue;
+  text-decoration: none;
+  background-color: white;
+  margin: 0 10px;
+  padding: 10px 10px;
+  transition: 0.3s ease-in-out;
+  border: 1px solid #ccc; /* Estilo de borde (opcional) */
+  border-radius: 5px; /* Borde redondeado (opcional) */
+}
+.hotels {
+    display: flex;
+    margin: 2em;
+}
+img {
+  height: auto;
+  width: 100%;
+  margin: 20px;
+  padding: 0;
+  border: 2px solid #ccc; /* Estilo de borde (ajusta según tus preferencias) */
+}
+
+/* Apply styles to the form element */
+form {
+    width: 50%;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    background-color: #f5f5f5;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Apply styles to labels */
+  form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  /* Apply styles to text inputs and textareas */
+  form input[type="text"],
+  form input[type="email"],
+  form textarea {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+  
+  /* Apply styles to submit button */
+  form input[type="submit"] {
+    display: block;
+    margin: 0 auto;
+    background-color: #261e6b;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  
+  form input[type="submit"]:hover {
+    background-color: #0056b3;
+  }
+
+/* Convierte a css, sin comentario y en un solo bloque de codigo: */
